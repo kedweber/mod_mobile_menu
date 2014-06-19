@@ -11,6 +11,7 @@
 	<files>
 		<filename module="mod_mobile_menu">mod_mobile_menu.php</filename>
 		<folder>tmpl</folder>
+		<folder>templates</folder>
 		<filename>html.php</filename>
         <filename>mod_mobile_menu.xml</filename>
 	</files>

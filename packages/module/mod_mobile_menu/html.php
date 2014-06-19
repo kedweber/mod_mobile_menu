@@ -1,6 +1,6 @@
 <?php
 
-class ModMenu_mobileHtml extends ModDefaultHtml
+class ModMobile_menuHtml extends ModDefaultHtml
 {
 	public function display()
 	{

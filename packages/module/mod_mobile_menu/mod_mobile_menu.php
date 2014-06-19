@@ -9,7 +9,7 @@
 
 defined('_JEXEC') or die;
 
-echo KService::get('mod://site/menu_mobile.html')
+echo KService::get('mod://site/mobile_menu.html')
     ->module($module)
     ->attribs($attribs)
     ->display();
