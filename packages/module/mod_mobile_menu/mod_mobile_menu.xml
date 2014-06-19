@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>Mod Mobile Menu</name>
+	<author>Joep van der Heijden</author>
+	<creationDate>February 2014</creationDate>
+    <copyright>Copyright (C) 2005 - 2014 Moyo Web Architects. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>joep.van.der.heijden@moyoweb.nl</authorEmail>
+	<version>1.0.0</version>
+	<description>Mobile menu</description>
+	<files>
+		<filename module="mod_mobile_menu">mod_mobile_menu.php</filename>
+		<folder>tmpl</folder>
+		<filename>html.php</filename>
+        <filename>mod_mobile_menu.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="menu"
+                       type="menu"
+                       label="Menu" />
+                <field name="show_languages"
+                       type="checkbox"
+                       label="Show language selector" />
+                <field name="show_search"
+                       type="checkbox"
+                       label="Show search" />
+                <field name="show_logo"
+                       type="checkbox"
+                       label="Show Logo" />
+                <field name="logo"
+                       type="media"
+                       label="Image" />
+			</fieldset>
+		</fields>
+	</config>
+
+    <media folder="media" destination="mod_mobile_menu">
+        <folder>js</folder>
+        <folder>less</folder>
+    </media>
+</extension>
