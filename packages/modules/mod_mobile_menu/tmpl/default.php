@@ -22,7 +22,7 @@ defined('_JEXEC') or die; ?>
 ?>
 
 <script src="media://mod_mobile_menu/js/mobile-menu.js" />
-<div class="navbar navbar-default navbar-fixed-top visible-xs visible-sm hidden-print" role="navigation" style="max-height:100%; overflow: auto;">
+<div class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md hidden-print" role="navigation" style="max-height:100%; overflow: auto;">
     <div class="container">
         <div class="navbar-header mobile-menu-header">
             <? if ($params->show_logo) : ?>
