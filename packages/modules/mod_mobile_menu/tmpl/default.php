@@ -26,9 +26,9 @@ defined('_JEXEC') or die; ?>
     <div class="container">
         <div class="navbar-header mobile-menu-header">
             <? if ($params->show_logo) : ?>
-            <a class="navbar-brand logo" href="<? echo JUri::base(); ?>"><img src="<?= $params->logo; ?>" class="img-responsive" style="float: left;"></a>
+            <a class="navbar-brand logo" href="<? echo JUri::base(); ?>"><?= @service('com://admin/cloudinary.controller.image')->path($params->logo)->cache(0)->attribs(array("class" => "img-responsive pull-left"))->display(); ?></a>
             <? endif; ?>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" style="float: right; margin-top: 10px;">
+            <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-ex1-collapse" style="margin-top: 10px;">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -36,13 +36,13 @@ defined('_JEXEC') or die; ?>
             </button>
 
             <? if ($params->show_search) : ?>
-            <a class="navbar-toggle button no-decoration" style="float: right; padding: 7px 14px; margin-left: 15px; margin-top: 10px;" href="<?= JRoute::_('index.php?option=com_search'); ?>">
+            <a class="navbar-toggle button no-decoration pull-right" style="padding: 7px 14px; margin-left: 15px; margin-top: 10px;" href="<?= JRoute::_('index.php?option=com_search'); ?>">
                 <i class="icon-search"></i>
             </a>
             <? endif; ?>
 
             <? if ($params->show_languages) : ?>
-            <div class="languages-selector" style="margin-top: 16px; display:inline-block; float: right;">
+            <div class="languages-selector pull-right" style="margin-top: 16px; display:inline-block;">
                 <?= $languageModule; ?>
             </div>
             <? endif; ?>
