@@ -1,0 +1,17 @@
+{
+    "name": "moyo/mobile_menu",
+    "type": "joomlatools-installer",
+    "description": "Mobile Menu Package",
+    "keywords": ["joomla", "menu", "mobile"],
+    "homepage": "https://moyoweb.assembla.com/code/moyo-content/git-26/nodes",
+    "authors": [
+        {
+            "name": "Jasper van Rijbroek",
+            "email": "jasper@moyoweb.nl",
+            "homepage": "http://www.moyoweb.nl"
+        }
+    ],
+    "require": {
+        "joomlatools/installer": "*"
+    }
+}
