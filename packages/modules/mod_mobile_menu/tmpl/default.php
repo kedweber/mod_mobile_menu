@@ -58,7 +58,6 @@ defined('_JEXEC') or die; ?>
     </div>
 </div>
 
-<script src="media/mod_menu_mobile/js/mobile-menu.js"></script>
 <script>
     new MobileMenu();
 </script>
