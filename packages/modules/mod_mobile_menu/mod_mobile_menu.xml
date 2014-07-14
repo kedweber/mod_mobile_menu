@@ -37,7 +37,7 @@
 		</fields>
 	</config>
 
-    <media folder="media" destination="mod_mobile_menu">
+    <media folder="media/mod_mobile_menu" destination="mod_mobile_menu">
         <folder>js</folder>
         <folder>less</folder>
     </media>
