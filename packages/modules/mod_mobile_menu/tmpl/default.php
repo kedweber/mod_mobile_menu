@@ -28,7 +28,7 @@ defined('_JEXEC') or die; ?>
             <? if ($params->show_logo) : ?>
             <a class="navbar-brand logo" href="<? echo JUri::base(); ?>"><?= @service('com://admin/cloudinary.controller.image')->path($params->logo)->cache(0)->attribs(array("class" => "img-responsive pull-left"))->display(); ?></a>
             <? endif; ?>
-            <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-ex1-collapse" style="margin-top: 10px;">
+            <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
