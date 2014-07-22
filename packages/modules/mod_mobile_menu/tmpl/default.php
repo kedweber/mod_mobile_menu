@@ -22,7 +22,7 @@ defined('_JEXEC') or die; ?>
 ?>
 
 <script src="media://mod_mobile_menu/js/mobile-menu.js" />
-<div class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md hidden-print" role="navigation" style="max-height:100%; overflow: auto;">
+<div class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md hidden-print" role="navigation">
     <div class="container">
         <div class="navbar-header mobile-menu-header">
             <? if ($params->show_logo) : ?>
@@ -36,13 +36,13 @@ defined('_JEXEC') or die; ?>
             </button>
 
             <? if ($params->show_search) : ?>
-            <a class="navbar-toggle button no-decoration pull-right" style="padding: 7px 14px; margin-left: 15px; margin-top: 10px;" href="<?= JRoute::_('index.php?option=com_search'); ?>">
+            <a class="navbar-toggle button no-decoration pull-right search" href="<?= JRoute::_('index.php?option=com_search'); ?>">
                 <i class="icon-search"></i>
             </a>
             <? endif; ?>
 
             <? if ($params->show_languages) : ?>
-            <div class="languages-selector pull-right" style="margin-top: 16px; display:inline-block;">
+            <div class="languages-selector pull-right">
                 <?= $languageModule; ?>
             </div>
             <? endif; ?>
