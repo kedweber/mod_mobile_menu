@@ -22,16 +22,16 @@ section:
 
 ```json
 {
-    "name": "moyo/mobile_menu",
+    "name": "cta/mobile_menu",
     "type": "vcs",
-    "url": "https://git.assembla.com/moyo-content.mobile_menu.git"
+    "url": "https://github.com/cta-int/mobile_menu.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "moyo/mobile_menu": "1.0.*",
+    "cta/mobile_menu": "1.0.*",
 ```
 
 Afterward, just run `composer update` from the root of your Joomla project.
