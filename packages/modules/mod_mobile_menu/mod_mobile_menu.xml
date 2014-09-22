@@ -6,14 +6,15 @@
     <copyright>Copyright (C) 2005 - 2014 Moyo Web Architects. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>joep.van.der.heijden@moyoweb.nl</authorEmail>
-	<version>1.0.1</version>
+	<version>1.1.2</version>
 	<description>Mobile menu</description>
 	<files>
-		<filename module="mod_mobile_menu">mod_mobile_menu.php</filename>
+		<file module="mod_mobile_menu">mod_mobile_menu.php</file>
+        <file>html.php</file>
+        <file>mod_mobile_menu.xml</file>
+
 		<folder>tmpl</folder>
 		<folder>templates</folder>
-		<filename>html.php</filename>
-        <filename>mod_mobile_menu.xml</filename>
 	</files>
 	<config>
 		<fields name="params">
@@ -34,10 +35,31 @@
                        type="media"
                        label="Image" />
 			</fieldset>
+
+            <fieldset name="advanced">
+                <field name="cache"
+                       type="list"
+                       default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time"
+                       type="text"
+                       default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field name="cachemode"
+                       type="hidden"
+                       default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
 		</fields>
 	</config>
 
-    <media folder="media" destination="mod_mobile_menu">
+    <media folder="media/mod_mobile_menu" destination="mod_mobile_menu">
         <folder>js</folder>
         <folder>less</folder>
     </media>

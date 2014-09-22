@@ -1,9 +1,9 @@
 {
-    "name": "moyo/mobile_menu",
+    "name": "cta/mobile_menu",
     "type": "joomlatools-installer",
     "description": "Mobile Menu Package",
     "keywords": ["joomla", "menu", "mobile"],
-    "homepage": "https://moyoweb.assembla.com/code/moyo-content/git-26/nodes",
+    "homepage": "https://github.com/cta-int/mobile-menu",
     "authors": [
         {
             "name": "Jasper van Rijbroek",
