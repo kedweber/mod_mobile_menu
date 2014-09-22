@@ -6,7 +6,7 @@
     <copyright>Copyright (C) 2005 - 2014 Moyo Web Architects. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>joep.van.der.heijden@moyoweb.nl</authorEmail>
-	<version>1.1.1</version>
+	<version>1.1.2</version>
 	<description>Mobile menu</description>
 	<files>
 		<file module="mod_mobile_menu">mod_mobile_menu.php</file>
