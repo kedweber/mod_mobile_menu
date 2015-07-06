@@ -1,5 +1,5 @@
 {
-    "name": "cta/mobile_menu",
+    "name": "moyo/mod_mobile_menu",
     "type": "joomlatools-installer",
     "description": "Mobile Menu Package",
     "keywords": ["joomla", "menu", "mobile"],
@@ -12,6 +12,7 @@
         }
     ],
     "require": {
-        "joomlatools/installer": "*"
+        "joomlatools/installer": "*",
+        "moyo/com_cloudinary": "1.0.*"
     }
 }
