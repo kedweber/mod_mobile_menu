@@ -11,7 +11,10 @@ The Mobile menu module was written my [Moyo Web Architects](http://moyoweb.nl).
 * Koowa 0.9 or 1.0 (as yet, Koowa 2 is not supported)
 * PHP 5.3.10 or better
 * Composer
+* jQuery >= 1.11.0
 * A Joomla template written in Bootstrap 3.
+* CCK Components
+    * Cloudinary >= 1.0.2
 
 ## Installation
 
@@ -20,18 +23,30 @@ The Mobile menu module was written my [Moyo Web Architects](http://moyoweb.nl).
 Installation is done through composer. In your `composer.json` file, you should add the following lines to the repositories
 section:
 
+from this repository;
+
 ```json
 {
-    "name": "cta/mobile_menu",
+    "name": "moyo/mod_mobile_menu",
     "type": "vcs",
-    "url": "https://github.com/cta-int/mobile_menu.git"
+    "url": "https://github.com/kedweber/mod_mobile_menu.git"
+}
+```
+
+or from the official repository;
+
+```json
+{
+    "name": "moyo/mod_mobile_menu",
+    "type": "vcs",
+    "url": "https://github.com/moyoweb/mod_mobile_menu.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "cta/mobile_menu": "1.0.*",
+    "moyo/mod_mobile_menu": "1.0.*",
 ```
 
 Afterward, just run `composer update` from the root of your Joomla project.
