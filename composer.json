@@ -3,7 +3,7 @@
     "type": "joomlatools-installer",
     "description": "Mobile Menu Package",
     "keywords": ["joomla", "menu", "mobile"],
-    "homepage": "https://github.com/cta-int/mobile-menu",
+    "homepage": "https://github.com/moyoweb/mod_mobile_menu",
     "authors": [
         {
             "name": "Jasper van Rijbroek",
