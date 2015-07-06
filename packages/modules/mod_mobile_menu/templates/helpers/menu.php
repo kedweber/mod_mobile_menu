@@ -37,7 +37,7 @@ class ModMobile_menuTemplateHelperMenu extends KTemplateHelperDefault
         } else if($item->type == 'url') {
             $html .= '<a href="'. $item->link .'" target="_blank">' . $item->title . '</a>';
         } else if($item->type == 'separator') {
-            $html .= '<a href="#">' . $item->title . '</a>';
+            $html .= '<a>' . $item->title . '</a>';
         }
 
         if ($item->deeper) {
